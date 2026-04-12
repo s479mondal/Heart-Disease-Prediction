@@ -58,7 +58,7 @@ function App() {
     setError(null)
     setPrediction(null)
     try {
-      const response = await fetch('http://localhost:8000/predict', {
+      const response = await fetch('https://heart-disease-prediction-rjjk.onrender.com/predict', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
