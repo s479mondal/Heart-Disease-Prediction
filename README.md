@@ -17,16 +17,19 @@ A comprehensive Machine Learning application that predicts the likelihood of hea
 ## 🛠️ Tech Stack
 
 ### Frontend
+
 - **Framework**: React.js (Vite)
 - **Styling**: CSS3 (Vanilla)
 - **Tooling**: ESLint, PostCSS
 
 ### Backend
+
 - **Framework**: FastAPI
 - **Server**: Uvicorn
 - **ML Libraries**: Scikit-Learn, Pandas, NumPy, Pickle
 
 ### DevOps & Deployment
+
 - **Containerization**: Docker, Docker Compose
 - **Platform Support**: Optimized for Render (Backend) and Netlify/Vercel (Frontend)
 
@@ -58,12 +61,14 @@ A comprehensive Machine Learning application that predicts the likelihood of hea
 Ensure you have [Docker](https://www.docker.com/) installed.
 
 1. **Clone the repository**:
+
    ```bash
    git clone https://github.com/s479mondal/Heart-Disease-Prediction.git
    cd Heart-Disease-Prediction
    ```
 
 2. **Run with Docker Compose**:
+
    ```bash
    docker-compose up --build
    ```
@@ -75,6 +80,7 @@ Ensure you have [Docker](https://www.docker.com/) installed.
 ### Option 2: Manual Local Setup
 
 #### Backend
+
 1. Create a virtual environment:
    ```bash
    python -m venv venv
@@ -90,6 +96,7 @@ Ensure you have [Docker](https://www.docker.com/) installed.
    ```
 
 #### Frontend
+
 1. Navigate to the frontend directory:
    ```bash
    cd frontend
@@ -113,23 +120,24 @@ Predict heart disease status based on clinical parameters.
 
 **Request Body:**
 
-| Field | Description | Example |
-| :--- | :--- | :--- |
-| `age` | Age in years | `52` |
-| `sex` | Gender (1 = male; 0 = female) | `1` |
-| `cp` | Chest pain type (0-3) | `0` |
-| `trestbps` | Resting blood pressure (mm Hg) | `125` |
-| `chol` | Serum cholestoral (mg/dl) | `212` |
-| `fbs` | Fasting blood sugar > 120 mg/dl (1 = true; 0 = false) | `0` |
-| `restecg` | Resting electrocardiographic results (0-2) | `1` |
-| `thalach` | Maximum heart rate achieved | `168` |
-| `exang` | Exercise induced angina (1 = yes; 0 = no) | `0` |
-| `oldpeak` | ST depression induced by exercise relative to rest | `1.0` |
-| `slope` | The slope of the peak exercise ST segment | `2` |
-| `ca` | Number of major vessels (0-3) colored by flourosopy | `2` |
-| `thal` | Thalassemia (1 = normal; 2 = fixed defect; 3 = reversable defect) | `3` |
+| Field      | Description                                                       | Example |
+| :--------- | :---------------------------------------------------------------- | :------ |
+| `age`      | Age in years                                                      | `52`    |
+| `sex`      | Gender (1 = male; 0 = female)                                     | `1`     |
+| `cp`       | Chest pain type (0-3)                                             | `0`     |
+| `trestbps` | Resting blood pressure (mm Hg)                                    | `125`   |
+| `chol`     | Serum cholestoral (mg/dl)                                         | `212`   |
+| `fbs`      | Fasting blood sugar > 120 mg/dl (1 = true; 0 = false)             | `0`     |
+| `restecg`  | Resting electrocardiographic results (0-2)                        | `1`     |
+| `thalach`  | Maximum heart rate achieved                                       | `168`   |
+| `exang`    | Exercise induced angina (1 = yes; 0 = no)                         | `0`     |
+| `oldpeak`  | ST depression induced by exercise relative to rest                | `1.0`   |
+| `slope`    | The slope of the peak exercise ST segment                         | `2`     |
+| `ca`       | Number of major vessels (0-3) colored by flourosopy               | `2`     |
+| `thal`     | Thalassemia (1 = normal; 2 = fixed defect; 3 = reversable defect) | `3`     |
 
 **Example JSON Body:**
+
 ```json
 {
   "age": 52,
@@ -149,6 +157,7 @@ Predict heart disease status based on clinical parameters.
 ```
 
 **Response:**
+
 ```json
 {
   "prediction": 1,
