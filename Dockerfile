@@ -22,4 +22,4 @@ COPY . .
 EXPOSE 8000
 
 # Command to run the application using the dynamic PORT provided by the environment (defaulting to 8000)
-CMD ["sh", "-c", "uvicorn app:app --host 0.0.0.0 --port ${PORT:-8000}"]
+CMD ["sh", "-c", "uvicorn app:app --host 0.0.0.0 --port ${PORT:-10000}"]
